@@ -2,22 +2,39 @@
   margin: 0;
   padding: 0;
 }
+.redtext{
+  color: #F16D7F;
+}
 
 .container {
   margin: 0 auto;
 }
 
-.navigation {
+.navigation{
+  padding: 18px 239px 19px 231px;
   background: #222222;
-  display: grid;
-  grid-template-columns:  auto auto auto auto auto;
+  display: flex;
+ justify-content: space-between;
 }
+
+.NavBar_lefticon1{
+padding-right: 41px;
+}
+.NavBar_righticon1{
+  padding-right: 25px;
+}
+.NavBar_righticon2{
+  padding-right: 42px;
+}
+
+
 
 .header {
   display: flex;
   align-content: space-between;
   align-items: center;
   background: #F1E4E6;
+  margin-bottom: 65px;
 }
 
 .header_text {
@@ -28,56 +45,63 @@
   font-size: 48px;
   line-height: 58px;
   color: #222222;
-
 }
 
-.img_content2{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+.cardimgbox{
+
+display: grid;
+justify-content: center;
+grid-template-columns: auto auto auto;
+grid-template-rows: auto ;
+grid-gap: 30px;
+padding-bottom: 96px;
+}
+.card_box1{
   position: relative;
-}
-.img_content{
- 
   
- 
 }
- 
-.img1_content_text {
+.card_boxHeader {
+  left: 103px;
+  right: 103px;
+  top: 105px;
+  bottom: 105px;
+  color: #FFFFFF;
   position: absolute;
   font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+ 
+}
+
+.card_box2{
+  position: relative;
+}
+.card_box3{
+  position: relative;
+}
+.card_box4{
+  grid-column-start: 5;
+  grid-column-end: 1;
+  position: relative;
+}
+
+.card_boxHeader4 {
+left: 491.14px;
+right: 489.14px;
+top: 65px;
+bottom: 65px;
+font-family: 'Lato';
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 19px;
 text-align: center;
 color: #FFFFFF;
+position: absolute;
 }
-
-
-  
-
-  
-  
-
-  /* .header_img {
-  padding-right: 16px;
-}
-
-.img1 {
-  padding-right: 30px;
-}
-
-.img2 {
-  padding-right: 30px;
-}
-
-.img4 {
-  padding-top: 30px; 
-}  */
-
-
 
 .card_header {
   text-align: center;
@@ -89,14 +113,17 @@ color: #FFFFFF;
 }
 
 .cards {
-  color: #5D5D5D;
+  
+color: #5D5D5D;
   padding: 0 260px 48px 260px;
   align-items: center;
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto;
-  gap: 30px;
+  grid-gap: 30px; 
 }
+
+
 
 .header_card {
   color: #5D5D5D;
@@ -111,6 +138,7 @@ color: #FFFFFF;
 }
 
 .text_cards {
+  align-content: center ;
   font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
@@ -119,16 +147,31 @@ color: #FFFFFF;
 color: #5D5D5D;
 }
 
-.cards_button {
-  display: flex;
-  padding: 15px 38px 14px 38px;
+.card_price{
+  padding-top: 18px;
   font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #F16D7F;
+
+}
+.cards_button {
+  border: 1px solid #FF6A6A;
+  text-align:center;
+  padding: 14.5px 38.5px ;
+  font-family: 'Lato';
+  
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   text-decoration: none;
-
+  color: #F26376;
+  
+  
 
 }
 
@@ -200,20 +243,11 @@ color: #5D5D5D;
   padding-bottom: 104px;
 
 }
-/* background-image : url(photo\ subscribe.svg) ;
-background-size : cover;
-padding-bottom: 126px;
-align-items: center;
-justify-content: center;
-display: flex;
-grid-template-columns: 400px auto;
-gap: 390px;
-background-image : url(photo\ subscribe.svg)
-background: rgba(244, 244, 244, 0.7); */
 
 .footer_Contacts {
-background-image : url(photo\ subscribe.svg);
-background-size: 100% auto;
+background-image : url(footerbg.png);
+background-repeat: no-repeat;
+background-size: 100%;
 display: flex;
 justify-content: center;
 padding-bottom: 126px;
@@ -234,8 +268,8 @@ align-items: center;
 
 
 .footer_ContactsText {
-width: 400px;
   font-family: 'Lato';
+  
   align-content: center;
   font-style: normal;
   font-weight: 400;
